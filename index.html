@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mylenna da Silva Duarte | Analista de Dados &amp; Automação</title>
+  <meta name="description" content="Portfólio de Mylenna da Silva Duarte, Analista de Dados e BI com automação como diferencial, no Rio de Janeiro. Júnior ou pleno, CLT ou PJ, início imediato. Power BI, SQL, Python e Power Platform, com projetos que economizam mais de 200 horas por mês." />
+  <meta name="author" content="Mylenna da Silva Duarte" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Mylenna da Silva Duarte | Analista de Dados &amp; Automação" />
+  <meta property="og:description" content="Analista de Dados / BI, júnior ou pleno · CLT ou PJ · início imediato. 200+ h/mês economizadas, 7 projetos e painéis em Power BI. Currículo, LinkedIn e contato." />
+  <!-- Pré-visualização de link: quando o domínio for definido, troque por um endereço absoluto (https://seu-dominio/img/og-image.png). -->
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mylenna da Silva Duarte, Analista de Dados e BI com automação: 200+ horas por mês economizadas, 7 projetos e 4 áreas atendidas." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="hex" viewBox="0 0 100 100"><path d="M50 4 L90 27 V73 L50 96 L10 73 V27 Z"/></symbol>
+  </svg>
+
+  <canvas id="network" aria-hidden="true"></canvas>
+  <div class="circuit circuit--tl" aria-hidden="true"></div>
+  <div class="circuit circuit--br" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="logo" aria-label="Mylenna, início">
+        <span class="logo__signature">Mylenna</span>
+        <span class="logo__heart">♡</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Seções">
+        <a href="#inicio" class="nav__link active">Visão geral</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#trajetoria" class="nav__link">Trajetória</a>
+        <a href="#projetos" class="nav__link">Projetos</a>
+        <a href="#competencias" class="nav__link">Competências</a>
+        <a href="#formacao" class="nav__link">Formação</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="docs/curriculo-mylenna-duarte.pdf" target="_blank" rel="noopener" class="btn btn--primary btn--sm nav-cv">
+          <i class="fa-solid fa-file-arrow-down"></i> Currículo
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== VISÃO GERAL (relatório) ===== -->
+    <section class="report" id="inicio">
+      <div class="container">
+        <div class="report__bar">
+          <p class="report__title"><i class="fa-solid fa-chart-simple"></i> Relatório de carreira&nbsp;· Mylenna&nbsp;Duarte</p>
+          <span class="report__stamp" id="updated" hidden><i class="fa-regular fa-clock"></i> Atualizado em <time id="updatedDate"></time></span>
+        </div>
+
+        <div class="report__grid">
+          <aside class="ctx" aria-label="Perfil">
+            <!-- Duas partes: no celular os indicadores entram entre elas -->
+            <div class="ctx__id">
+            <div class="ctx__visual">
+              <div class="orbit orbit--1" aria-hidden="true"></div>
+              <div class="orbit orbit--2" aria-hidden="true"></div>
+              <div class="ctx__photo-frame">
+                <img src="img/foto.webp" width="700" height="933" alt="Mylenna Duarte" class="ctx__photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                <div class="ctx__photo-fallback" aria-hidden="true">M</div>
+              </div>
+              <span class="float-icon float-icon--1" aria-hidden="true"><i class="fa-solid fa-laptop"></i></span>
+              <span class="float-icon float-icon--2" aria-hidden="true"><i class="fa-solid fa-gear"></i></span>
+              <span class="float-icon float-icon--3" aria-hidden="true"><i class="fa-solid fa-cloud"></i></span>
+              <span class="float-icon float-icon--4" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+            </div>
+            <h1 class="ctx__name">Mylenna Duarte</h1>
+            <p class="ctx__role">Busca vaga de Analista de Dados&nbsp;/&nbsp;BI</p>
+            <p class="ctx__sub">Júnior ou pleno · CLT ou PJ</p>
+
+            <span class="ctx__tag"><span class="dot"></span> Disponível para início imediato</span>
+
+            <div class="ctx__actions">
+              <a href="docs/curriculo-mylenna-duarte.pdf" target="_blank" rel="noopener" class="btn btn--primary"><i class="fa-solid fa-file-arrow-down"></i> Baixar currículo</a>
+              <a href="https://www.linkedin.com/in/mylenna/" target="_blank" rel="noopener" class="btn btn--ghost"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+              <a href="https://wa.me/5521971164026?text=Ol%C3%A1%20Mylenna!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20uma%20vaga." target="_blank" rel="noopener" class="btn btn--ghost"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+              <a href="mailto:mysilvaduarte@gmail.com?subject=Oportunidade%20em%20Dados%20%26%20BI" class="btn btn--ghost"><i class="fa-solid fa-envelope"></i> E-mail</a>
+              <a href="https://github.com/MylennaDuarte/" target="_blank" rel="noopener" class="btn btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+            </div>
+
+            <div class="ctx__more">
+            <p class="ctx__lead">Estruturo a base, automatizo a coleta e entrego o painel que responde à pergunta do gestor. Cuido hoje dos dados de RH, CCO, QSMS e TI.</p>
+
+            <ul class="ctx__meta">
+              <li><i class="fa-solid fa-briefcase"></i> Hoje: Assistente de Automação de Processos · MRO Ativa</li>
+              <li><i class="fa-solid fa-location-dot"></i> Rio de Janeiro, RJ · presencial, híbrido ou remoto</li>
+              <li><i class="fa-solid fa-graduation-cap"></i> Sistemas de Informação · Estácio, conclusão em dez. 2026</li>
+              <li><i class="fa-solid fa-language"></i> Português nativo · Inglês e espanhol básicos</li>
+              <li><i class="fa-solid fa-quote-left"></i> <a href="#recomendacoes">2 recomendações de gestores</a></li>
+            </ul>
+            </div>
+          </aside>
+
+          <div class="report__main">
+            <ul class="kpis" data-animate aria-label="Indicadores principais">
+              <li class="kpi">
+                <span class="kpi__num"><span data-count="200">0</span><small>+</small></span>
+                <span class="kpi__label">horas/mês economizadas</span>
+                <span class="kpi__sub">em automações que estão em produção</span>
+              </li>
+              <li class="kpi">
+                <span class="kpi__num"><span data-count="7">0</span></span>
+                <span class="kpi__label">projetos entregues</span>
+                <span class="kpi__sub">5 em produção · 2 acadêmicos</span>
+              </li>
+              <li class="kpi">
+                <span class="kpi__num"><span data-count="4">0</span></span>
+                <span class="kpi__label">áreas atendidas</span>
+                <span class="kpi__sub">RH · CCO · QSMS · TI</span>
+              </li>
+              <li class="kpi">
+                <span class="kpi__num"><span data-count="2">0</span><small>anos</small></span>
+                <span class="kpi__label">de prática em dados</span>
+                <span class="kpi__sub">análise, tratamento e automação, desde 2024</span>
+              </li>
+            </ul>
+
+            <div class="chart" data-animate>
+              <div class="chart__head">
+                <h2>Horas economizadas por mês, por projeto</h2>
+                <span class="chart__note"><i class="fa-solid fa-circle-check"></i> medido em produção</span>
+              </div>
+              <ol class="chart__rows">
+                <li class="chart__row">
+                  <span class="chart__label">Captação de comprovantes de pagamento</span>
+                  <span class="chart__track"><span class="chart__fill" data-width="100" style="--d: 0s"></span></span>
+                  <span class="chart__val">81,46 h</span>
+                  <span class="chart__delta">+99,39% produtividade</span>
+                </li>
+                <li class="chart__row">
+                  <span class="chart__label">Divisor de folha de ponto</span>
+                  <span class="chart__track"><span class="chart__fill" data-width="27" style="--d: 0.12s"></span></span>
+                  <span class="chart__val">22 h</span>
+                  <span class="chart__delta">+99,63% produtividade</span>
+                </li>
+                <li class="chart__row">
+                  <span class="chart__label">Relatório de ações e planos</span>
+                  <span class="chart__track"><span class="chart__fill" data-width="13.5" style="--d: 0.24s"></span></span>
+                  <span class="chart__val">11 h</span>
+                  <span class="chart__delta">+94% produtividade</span>
+                </li>
+                <li class="chart__row">
+                  <span class="chart__label">Automação de arquivos eSocial</span>
+                  <span class="chart__track"><span class="chart__fill" data-width="11" style="--d: 0.36s"></span></span>
+                  <span class="chart__val">9 h</span>
+                  <span class="chart__delta">+95,10% produtividade</span>
+                </li>
+                <li class="chart__row chart__row--na">
+                  <span class="chart__label">Digitalização dos indicadores DBO</span>
+                  <span class="chart__track chart__track--na" aria-hidden="true"></span>
+                  <span class="chart__val">100%</span>
+                  <span class="chart__delta">do processo legado digitalizado</span>
+                </li>
+              </ol>
+              <p class="chart__foot">
+                Os quatro projetos medidos somam 123,46 h/mês. Com as demais automações em produção para RH, CCO, QSMS e TI,
+                a economia passa de 200 h/mês. O DBO não foi medido em horas: o ganho foi digitalizar todo o processo, antes feito com formulários estáticos e processamento manual.
+              </p>
+              <a class="chart__link" href="#paineis"><i class="fa-solid fa-chart-pie"></i> Ver as telas dos projetos <i class="fa-solid fa-arrow-down"></i></a>
+              <div class="chart__stack">
+                <span class="chart__stack-label">Ferramentas por trás dos números</span>
+                <span class="chip">Power BI</span><span class="chip">Power Automate</span><span class="chip">Power Apps</span>
+                <span class="chip">Dataverse</span><span class="chip">Power Query · DAX</span><span class="chip">SQL</span>
+                <span class="chip">Python</span><span class="chip">VBA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section section--alt" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Sobre mim</h2>
+            <p class="section__desc">O caminho até aqui, em primeira pessoa.</p>
+          </div>
+        </div>
+
+        <div class="about" data-reveal>
+          <article class="about__card about__main">
+            <p class="about__lead">
+              Gosto do momento em que um número deixa de ser linha de planilha e passa a dizer o que fazer.
+              Comecei analisando dados financeiros em Contas a Receber na IBM, conciliando carteira e montando relatório,
+              e desde então sigo atrás disso: análise de dados e automação de processos.
+            </p>
+            <p>
+              Hoje sou a principal responsável pelos dados e pelas automações de quatro áreas na MRO Ativa: RH, CCO, QSMS e TI.
+              Na prática, isso é levantar requisitos e mapear o processo e as regras de negócio com quem executa, estruturar e validar a base em SQL e Dataverse, automatizar a coleta
+              com Power Automate, Python ou VBA e só então entregar o painel em Power BI. Faço o ciclo inteiro de propósito,
+              porque o gargalo quase nunca está no gráfico: está no caminho que o dado percorre até chegar nele.
+            </p>
+            <p>
+              Levo a estatística a sério na mesma medida. No estudo sobre segurança pública no Rio de Janeiro apliquei o método
+              de Tukey para separar sazonalidade de desvio real por AISP, em vez de decidir pela média. E, no Business Case de
+              Big Data que desenvolvi na graduação, a própria instituição analisada confirmou que os resultados batiam com a experiência de negócio dela e deu nota 5 de 5 ao projeto.
+            </p>
+            <p>
+              Fora do expediente eu continuo estudando e construindo: curso Sistemas de Informação na Estácio, testo por conta
+              própria ferramentas de IA e automação e guardo os experimentos no GitHub. Ferramenta nova costuma virar projeto
+              de teste antes de virar assunto de reunião.
+            </p>
+          </article>
+
+          <aside class="about__card about__side">
+            <div class="about__block">
+              <h3 class="about__block-title">Como eu trabalho</h3>
+              <ul class="about__how">
+                <li><span class="hexi hexi--sm"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-magnifying-glass"></i></span> Começo pelo processo, com quem executa</li>
+                <li><span class="hexi hexi--sm"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-diagram-project"></i></span> Entrego o ciclo inteiro: base, automação e painel</li>
+                <li><span class="hexi hexi--sm"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-stopwatch"></i></span> Meço o resultado em horas devolvidas</li>
+              </ul>
+            </div>
+
+            <div class="about__block">
+              <h3 class="about__block-title">O que busco</h3>
+              <ul class="about__facts">
+                <li><span>Vaga</span><strong>Analista de Dados / BI, com automação como diferencial</strong></li>
+                <li><span>Nível</span><strong>Júnior ou pleno</strong></li>
+                <li><span>Contratação</span><strong>CLT ou PJ</strong></li>
+                <li><span>Formato</span><strong>Presencial, híbrido ou remoto, a partir do Rio de Janeiro</strong></li>
+                <li><span>Início</span><strong>Imediato</strong></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRAJETÓRIA ===== -->
+    <section class="section" id="trajetoria">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Trajetória 2022–2026</h2>
+            <p class="section__desc">Experiência e formação no mesmo eixo de tempo. Clique ou toque em uma barra para ir ao detalhe.</p>
+          </div>
+        </div>
+
+        <div class="gantt" data-animate role="group" aria-label="Linha do tempo de experiência e formação">
+          <div class="gantt__axis" aria-hidden="true">
+            <span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span>
+          </div>
+          <div class="gantt__row">
+            <span class="gantt__label">Assistente de Automação de Processos <small>MRO Ativa<span class="gantt__when" aria-hidden="true"> · abr 25 → atual</span></small></span>
+            <span class="gantt__track"><button type="button" class="gantt__bar gantt__bar--now" data-id="mro-2" style="--s: 65%; --w: 30%" aria-describedby="tl-mro-2">abr 25 → atual</button></span>
+          </div>
+          <div class="gantt__row">
+            <span class="gantt__label">Estagiária de Processos e Automação <small>MRO Ativa<span class="gantt__when" aria-hidden="true"> · ago 24 → mar 25</span></small></span>
+            <span class="gantt__track"><button type="button" class="gantt__bar" data-id="mro-1" style="--s: 51.7%; --w: 13.3%" aria-describedby="tl-mro-1">ago 24 → mar 25</button></span>
+          </div>
+          <div class="gantt__row">
+            <span class="gantt__label">Voluntária, administração de banco de dados <small>Igreja Dunamis<span class="gantt__when" aria-hidden="true"> · abr 24 → ago 25</span></small></span>
+            <span class="gantt__track"><button type="button" class="gantt__bar" data-id="dunamis" style="--s: 45%; --w: 28.3%" aria-describedby="tl-dunamis">abr 24 → ago 25</button></span>
+          </div>
+          <div class="gantt__row">
+            <span class="gantt__label">Jovem Aprendiz, Contas a Receber <small>IBM Brasil<span class="gantt__when" aria-hidden="true"> · jun 22 → ago 23</span></small></span>
+            <span class="gantt__track"><button type="button" class="gantt__bar" data-id="ibm" style="--s: 8.3%; --w: 25%" aria-describedby="tl-ibm">jun 22 → ago 23</button></span>
+          </div>
+          <div class="gantt__row">
+            <span class="gantt__label">Bacharelado em Sistemas de Informação <small>Universidade Estácio de Sá<span class="gantt__when" aria-hidden="true"> · mar 23 → dez 26</span></small></span>
+            <span class="gantt__track"><button type="button" class="gantt__bar gantt__bar--edu" data-id="estacio" style="--s: 23.3%; --w: 76.7%" aria-describedby="tl-estacio">mar 23 → dez 26</button></span>
+          </div>
+        </div>
+
+        <div class="tl-grid" data-reveal>
+          <article class="tl-card tl-card--now" data-id="mro-2" id="tl-mro-2">
+            <h3>Assistente de Automação de Processos</h3>
+            <p class="tl-place"><span class="tl-date">abr. 2025 → atual</span><span><i class="fa-solid fa-building"></i> MRO Ativa · Setor logístico · Rio de Janeiro, RJ</span></p>
+            <ul class="tl-points">
+              <li><strong>Mais de 200 h/mês de economia operacional</strong> com automações e soluções de dados para RH, CCO, QSMS e TI, como principal responsável.</li>
+              <li>Dashboards e KPIs em Power BI, com Power Query, DAX e consultas SQL.</li>
+              <li>Coleta, tratamento, integração e validação de dados de sistemas corporativos, planilhas, Dataverse e APIs.</li>
+              <li>RPA e rotinas de ETL com Power Platform, Python e VBA, do levantamento de requisitos e mapeamento de processos aos testes, implantação e documentação.</li>
+            </ul>
+          </article>
+          <article class="tl-card" data-id="mro-1" id="tl-mro-1">
+            <h3>Estagiária de Processos e Automação</h3>
+            <p class="tl-place"><span class="tl-date">ago. 2024 → mar. 2025</span><span><i class="fa-solid fa-building"></i> MRO Ativa · Rio de Janeiro, RJ</span></p>
+            <ul class="tl-points">
+              <li>Criação, suporte e manutenção de automações com Power Automate, Power Apps e Dataverse, com correção de falhas e melhorias de performance.</li>
+              <li>Gestão e atualização de sistemas corporativos e bases operacionais.</li>
+              <li>Análise de inconsistências, validação de dados e processos e atendimento de chamados internos.</li>
+            </ul>
+          </article>
+          <article class="tl-card" data-id="dunamis" id="tl-dunamis">
+            <h3>Voluntária, administração de banco de dados</h3>
+            <p class="tl-place"><span class="tl-date">abr. 2024 → ago. 2025</span><span><i class="fa-solid fa-hand-holding-heart"></i> Igreja Dunamis · Rio de Janeiro, RJ</span></p>
+            <ul class="tl-points">
+              <li>Criação, estruturação e manutenção de banco de dados, com modelagem de tabelas.</li>
+              <li>Consultas SQL e relatórios de apoio às áreas.</li>
+              <li>MySQL e Azure.</li>
+            </ul>
+          </article>
+          <article class="tl-card" data-id="ibm" id="tl-ibm">
+            <h3>Jovem Aprendiz, Contas a Receber</h3>
+            <p class="tl-place"><span class="tl-date">jun. 2022 → ago. 2023</span><span><i class="fa-solid fa-building"></i> IBM Brasil · Rio de Janeiro, RJ</span></p>
+            <ul class="tl-points">
+              <li>Primeira experiência com análise de dados financeiros, crédito e cobrança.</li>
+              <li>Gestão de carteira de clientes, validação de informações financeiras, conciliação e ajustes de pagamentos.</li>
+              <li>Relatórios financeiros e apoio interdepartamental.</li>
+            </ul>
+          </article>
+          <article class="tl-card tl-card--edu" data-id="estacio" id="tl-estacio">
+            <h3>Bacharelado em Sistemas de Informação</h3>
+            <p class="tl-place"><span class="tl-date">mar. 2023 → dez. 2026</span><span><i class="fa-solid fa-graduation-cap"></i> Universidade Estácio de Sá · Rio de Janeiro, RJ</span></p>
+            <p>Graduação em andamento. O projeto de Big Data feito no curso está em <a href="#paineis" data-panel="vp-bigdata">Projetos, com os painéis em Power BI</a>.</p>
+          </article>
+        </div>
+
+        <!-- Texto integral das recomendações no LinkedIn; não editar nem resumir -->
+        <div class="recs" id="recomendacoes" data-reveal>
+          <div class="recs__head">
+            <h3><i class="fa-solid fa-quote-left"></i> Recomendações dos gestores</h3>
+            <a href="https://www.linkedin.com/in/mylenna/details/recommendations/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> Ver no LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="recs__grid">
+            <figure class="rec">
+              <p class="rec__lead" aria-hidden="true">“…um perfil diferenciado: curiosa, proativa e muito comprometida.”</p>
+              <blockquote class="rec__text">
+                <p>Tive o prazer de acompanhar a trajetória da Mylenna desde quando chegou como estagiária, e ela rapidamente demonstrou um perfil diferenciado: curiosa, proativa e muito comprometida.</p>
+                <p>Além da capacidade técnica, outros pontos se destacam: ela documenta muito bem o que desenvolve — o que garante sustentação de longo prazo e facilita o trabalho de toda a equipe; consegue apresentar seu trabalho com clareza para públicos de diferentes níveis, do time técnico até a liderança; e sempre traz ótimas propostas de design e UX em suas soluções.</p>
+                <p>Dentre as principais entregas, vale destacar: a automação de leitura e organização de mais de 2.000 comprovantes mensalmente com Power Automate Desktop; e o desenvolvimento de uma solução em Power Apps para captura e planejamento de demanda de compras.</p>
+              </blockquote>
+              <figcaption class="rec__who">
+                <span class="hexi rec__mono" aria-hidden="true"><svg aria-hidden="true"><use href="#hex"/></svg><b>VA</b></span>
+                <span><strong>Victor Almeida</strong><small>Gerente de TI · supervisor direto na MRO Ativa</small><small>Recomendação no LinkedIn · mar. 2026</small></span>
+              </figcaption>
+            </figure>
+            <figure class="rec">
+              <p class="rec__lead" aria-hidden="true">“…sempre demonstrando bastante interesse e preocupação com execução…”</p>
+              <blockquote class="rec__text">
+                <p>Mylenna,<br />Nesse período de pouco mais de 1 ano conosco, você aprendeu sobre o Contas a Receber de Brasil, muito focado em seguir as regras bancárias vigentes no país, aplicou bem os conhecimentos que te foram transmitidos, sempre demonstrando bastante interesse e preocupação com execução, além de adquirir softskills que te ajudarão em qualquer área ou posição que venha a ocupar.</p>
+                <p>Isso aconteceu ao mesmo tempo em que fortaleceu conhecimentos que já possuía em ferramentas como word e excel e, ainda despertou interesse por tecnologia da informação.</p>
+                <p>Siga persistente e obstinada, além de segura de seu potencial.</p>
+              </blockquote>
+              <figcaption class="rec__who">
+                <span class="hexi rec__mono" aria-hidden="true"><svg aria-hidden="true"><use href="#hex"/></svg><b>GF</b></span>
+                <span><strong>Gabriel França</strong><small>Gerente de Contas a Receber Américas · supervisor direto na IBM Global Financing</small><small>Recomendação no LinkedIn · set. 2023</small></span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS (matriz) ===== -->
+    <section class="section section--alt" id="projetos">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Projetos</h2>
+            <p class="section__desc">Primeiro, as telas dos projetos. Depois, a lista completa com o resultado medido de cada projeto.</p>
+          </div>
+        </div>
+
+        <div class="viewer" id="paineis">
+          <div class="viewer__head">
+            <h3><i class="fa-solid fa-chart-pie"></i> Painéis e aplicações</h3>
+            <div class="viewer__tabs" role="tablist" aria-label="Escolha o projeto">
+              <button type="button" role="tab" class="viewer__tab" id="vt-comprovantes" aria-controls="vp-comprovantes" aria-selected="true">Comprovantes · App</button>
+              <button type="button" role="tab" class="viewer__tab" id="vt-acoes" aria-controls="vp-acoes" aria-selected="false" tabindex="-1">Ações e planos</button>
+              <button type="button" role="tab" class="viewer__tab" id="vt-seguranca" aria-controls="vp-seguranca" aria-selected="false" tabindex="-1">Segurança pública</button>
+              <button type="button" role="tab" class="viewer__tab" id="vt-bigdata" aria-controls="vp-bigdata" aria-selected="false" tabindex="-1">Big Data · Marketing</button>
+            </div>
+          </div>
+
+          <div class="viewer__panel" role="tabpanel" id="vp-comprovantes" aria-labelledby="vt-comprovantes">
+            <div class="viewer__stage">
+              <div class="viewer__shots">
+                <a class="viewer__shot" href="img/paineis/comprovantes-1.webp" data-lightbox="comprovantes" data-caption="Captação de comprovantes · Página 1 de 2: tela inicial do aplicativo">
+                  <img src="img/paineis/comprovantes-1.webp" width="1019" height="572" alt="Tela inicial do aplicativo Separação de Comprovantes: três etapas de preparação (importar comprovantes, importar bases e revisar referências), botão de executar a separação, tabela das últimas execuções por competência e os cartões da última execução, com 115 comprovantes lidos e nenhum não localizado. Dados de demonstração." />
+                </a>
+                <a class="viewer__shot" href="img/paineis/comprovantes-2.webp" data-lightbox="comprovantes" data-caption="Captação de comprovantes · Página 2 de 2: extração por identificador">
+                  <img src="img/paineis/comprovantes-2.webp" width="1186" height="668" loading="lazy" alt="Janela Extrair por identificador do aplicativo: campo para informar um identificador por linha, com o aviso de que a automação localiza e separa apenas os comprovantes correspondentes e de que o usuário recebe uma notificação ao final. Dados de demonstração." />
+                </a>
+              </div>
+              <div class="viewer__pages" role="group" aria-label="Telas do aplicativo">
+                <button type="button" class="viewer__page" aria-pressed="true">Tela inicial</button>
+                <button type="button" class="viewer__page" aria-pressed="false">Extrair por identificador</button>
+              </div>
+            </div>
+            <div class="viewer__info">
+              <h4>Captação de comprovantes de pagamento</h4>
+              <p class="viewer__kind">Em produção · MRO Ativa</p>
+              <p>Aplicativo em Power Apps que trata mais de 2.000 comprovantes por mês e reúne a importação dos comprovantes e das bases, a execução da separação e a consulta do histórico. A leitura dos PDFs e a conciliação são feitas em Power Query, e o Power Automate Cloud e Desktop orquestra a execução e a organização dos arquivos por colaborador, cliente e evento. O repositório é um estudo de caso, com dados fictícios, como nas telas acima.</p>
+              <p class="viewer__result"><i class="fa-solid fa-arrow-trend-up"></i> 81,46 h/mês economizadas · +99,39% produtividade</p>
+              <div class="chips"><span class="chip">Power Apps</span><span class="chip">Power Automate</span><span class="chip">Power Query (M)</span><span class="chip">SharePoint</span><span class="chip">VBA</span></div>
+              <a class="viewer__repo" href="https://github.com/MylennaDuarte/Automacao-Comprovantes-Pagamento" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Ver no GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="viewer__panel" role="tabpanel" id="vp-acoes" aria-labelledby="vt-acoes">
+            <div class="viewer__stage">
+              <div class="viewer__shots">
+                <a class="viewer__shot" href="img/paineis/acoes-1.webp" data-lightbox="acoes" data-caption="Relatório de ações e planos · Página 1 de 2: visão por unidade">
+                  <img src="img/paineis/acoes-1.webp" width="1280" height="714" loading="lazy" alt="Painel Power BI de ações e planos: total de ações, quantidade por status encerrado, vencido e no prazo, total por unidade, status das ações por unidade e ações por responsável pela execução. Nomes anonimizados." />
+                </a>
+                <a class="viewer__shot" href="img/paineis/acoes-2.webp" data-lightbox="acoes" data-caption="Relatório de ações e planos · Página 2 de 2: detalhamento por cliente">
+                  <img src="img/paineis/acoes-2.webp" width="1280" height="715" loading="lazy" alt="Painel Power BI de ações e planos com filtros por unidade, detalhamento, status e responsável: ações por responsável, quantidade por status e status das ações por cliente. Nomes anonimizados." />
+                </a>
+              </div>
+              <div class="viewer__pages" role="group" aria-label="Páginas do relatório">
+                <button type="button" class="viewer__page" aria-pressed="true">Visão por unidade</button>
+                <button type="button" class="viewer__page" aria-pressed="false">Detalhamento por cliente</button>
+              </div>
+            </div>
+            <div class="viewer__info">
+              <h4>Relatório Power BI de ações e planos</h4>
+              <p class="viewer__kind">Em produção · segurança do trabalho, MRO Ativa</p>
+              <p>Acompanhamento dos planos de ação por status, unidade, cliente e responsável. A base é extraída e atualizada pelo Power Automate, sem controle manual. Nomes de unidades, clientes e colaboradores anonimizados nos prints.</p>
+              <p class="viewer__result"><i class="fa-solid fa-arrow-trend-up"></i> 11 h/mês economizadas · +94% produtividade</p>
+              <div class="chips"><span class="chip">Power BI</span><span class="chip">Power Automate</span></div>
+              <a class="viewer__repo" href="https://github.com/MylennaDuarte/Relatorio-Acoes-e-planos" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Ver no GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="viewer__panel" role="tabpanel" id="vp-seguranca" aria-labelledby="vt-seguranca">
+            <div class="viewer__stage">
+              <div class="viewer__shots">
+                <a class="viewer__shot" href="img/paineis/seguranca-1.webp" data-lightbox="seguranca" data-caption="Data Analytics aplicado à segurança pública · Página 1 de 2: análise por AISP">
+                  <img src="img/paineis/seguranca-1.webp" width="1280" height="694" loading="lazy" alt="Painel Power BI de homicídios dolosos por AISP: quartis, mediana, IQR e limites inferior e superior de Tukey, distribuição por batalhão, as cinco AISPs com menos casos, correlação de 0,77 entre homicídios dolosos e culposos e as AISPs com valores atípicos." />
+                </a>
+                <a class="viewer__shot" href="img/paineis/seguranca-2.webp" data-lightbox="seguranca" data-caption="Data Analytics aplicado à segurança pública · Página 2 de 2: análise temporal">
+                  <img src="img/paineis/seguranca-2.webp" width="1280" height="707" loading="lazy" alt="Painel Power BI de análise temporal: evolução anual dos homicídios dolosos no Rio de Janeiro, as cinco AISPs com maior tendência, as dez AISPs com mais homicídios e a matriz de intensidade por AISP e ano desde 2003." />
+                </a>
+              </div>
+              <div class="viewer__pages" role="group" aria-label="Páginas do relatório">
+                <button type="button" class="viewer__page" aria-pressed="true">Análise por AISP</button>
+                <button type="button" class="viewer__page" aria-pressed="false">Análise temporal</button>
+              </div>
+            </div>
+            <div class="viewer__info">
+              <h4>Data Analytics aplicado à segurança pública</h4>
+              <p class="viewer__kind">Projeto prático de Big Data</p>
+              <p>Homicídios dolosos no Rio de Janeiro por Área Integrada de Segurança Pública (AISP), desde 2003. Quartis, IQR e limites de Tukey separam variação sazonal de desvio crítico, e a correlação com homicídios culposos chega a 0,77.</p>
+              <p class="viewer__result"><i class="fa-solid fa-magnifying-glass-chart"></i> Sazonalidade e desvios críticos identificados por AISP</p>
+              <div class="chips"><span class="chip">Power BI</span><span class="chip">Power Query (M)</span><span class="chip">DAX</span><span class="chip">Estatística</span></div>
+              <a class="viewer__repo" href="https://github.com/MylennaDuarte/Curso-AnalistaDeDados-BigData/tree/main/Trabalho%20final%20-%20Relat%C3%B3rio%20Data%20Analytics%20Aplicado%20%C3%A0%20Seguran%C3%A7a" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Ver no GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="viewer__panel" role="tabpanel" id="vp-bigdata" aria-labelledby="vt-bigdata">
+            <div class="viewer__stage">
+              <div class="viewer__shots">
+                <a class="viewer__shot" href="img/paineis/bigdata-1.webp" data-lightbox="bigdata" data-caption="Big Data para marketing · Página 1 de 3: dados demográficos e interesse no Google">
+                  <img src="img/paineis/bigdata-1.webp" width="1280" height="718" loading="lazy" alt="Painel Power BI de dados demográficos: canto é a categoria mais pesquisada e dança a menos pesquisada, com a evolução do interesse no Google de 2019 a 2025, as categorias mais pesquisadas por estado e a quantidade de interesse por ano." />
+                </a>
+                <a class="viewer__shot" href="img/paineis/bigdata-2.webp" data-lightbox="bigdata" data-caption="Big Data para marketing · Página 2 de 3: Instagram">
+                  <img src="img/paineis/bigdata-2.webp" width="1280" height="716" loading="lazy" alt="Painel Power BI do Instagram: engajamento por faixa etária e categoria, com pico entre 25 e 34 anos, distribuição por gênero, hashtags mais usadas e distribuição das publicações por categoria." />
+                </a>
+                <a class="viewer__shot" href="img/paineis/bigdata-3.webp" data-lightbox="bigdata" data-caption="Big Data para marketing · Página 3 de 3: YouTube">
+                  <img src="img/paineis/bigdata-3.webp" width="1280" height="717" loading="lazy" alt="Painel Power BI do YouTube: dança é a categoria mais visualizada e teatro a menos, com a soma de visualizações por categoria e por ano de 2019 a 2025." />
+                </a>
+              </div>
+              <div class="viewer__pages" role="group" aria-label="Páginas do relatório">
+                <button type="button" class="viewer__page" aria-pressed="true">Dados demográficos</button>
+                <button type="button" class="viewer__page" aria-pressed="false">Instagram</button>
+                <button type="button" class="viewer__page" aria-pressed="false">YouTube</button>
+              </div>
+            </div>
+            <div class="viewer__info">
+              <h4>Big Data para marketing de instituições artísticas</h4>
+              <p class="viewer__kind">Projeto acadêmico · feito para o Grupo Roger Bucley</p>
+              <p>Interesse do público por canto, dança, dublagem e teatro no Google, no Instagram e no YouTube, por região, faixa etária e gênero, para orientar o marketing e a captação de clientes.</p>
+              <p class="viewer__result"><i class="fa-solid fa-star"></i> Nota 5 de 5 na avaliação do cliente</p>
+              <div class="chips"><span class="chip">Power BI</span><span class="chip">Power Query</span><span class="chip">Análise exploratória</span><span class="chip">KPIs</span></div>
+              <a class="viewer__repo" href="https://github.com/MylennaDuarte/Analise-de-Big-Data-para-Marketing-de-Instituicoes-Artisticas" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Ver no GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <p class="viewer__hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Clique na imagem para ver em tamanho real.</p>
+        </div>
+
+        <div class="matrix" data-reveal>
+          <div class="matrix__head">
+            <h3><i class="fa-solid fa-table-list"></i> Todos os projetos</h3>
+            <span class="matrix__note"><strong id="projectsCount">7</strong> de 7 · ordenado por horas/mês</span>
+          </div>
+          <div class="slicers" role="group" aria-label="Filtros de projetos">
+            <div class="slicer-group">
+              <span class="slicer-group__label">Categoria</span>
+              <button class="slicer active" data-key="cat" data-value="all" aria-pressed="true">Todas</button>
+              <button class="slicer" data-key="cat" data-value="automacao" aria-pressed="false">Automação</button>
+              <button class="slicer" data-key="cat" data-value="dados" aria-pressed="false">Dados &amp; BI</button>
+              <button class="slicer" data-key="cat" data-value="python" aria-pressed="false">Python</button>
+            </div>
+            <div class="slicer-group">
+              <span class="slicer-group__label">Ferramenta</span>
+              <button class="slicer active" data-key="tool" data-value="all" aria-pressed="true">Todas</button>
+              <button class="slicer" data-key="tool" data-value="power-bi" aria-pressed="false">Power BI</button>
+              <button class="slicer" data-key="tool" data-value="power-automate" aria-pressed="false">Power Automate</button>
+              <button class="slicer" data-key="tool" data-value="power-apps" aria-pressed="false">Power Apps</button>
+              <button class="slicer" data-key="tool" data-value="power-query" aria-pressed="false">Power Query &amp; DAX</button>
+              <button class="slicer" data-key="tool" data-value="python" aria-pressed="false">Python</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="matrix__table" id="projects">
+              <thead>
+                <tr>
+                  <th scope="col">Projeto</th>
+                  <th scope="col">Categoria</th>
+                  <th scope="col">Ferramentas</th>
+                  <th scope="col" class="matrix__th-num">h/mês</th>
+                  <th scope="col">Resultado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="matrix__row" data-cat="automacao" data-tools="power-apps power-automate power-query vba">
+                  <td data-label="Projeto"><span class="matrix__name"><button type="button" class="matrix__toggle" aria-expanded="false" aria-controls="p1">Captação de comprovantes de pagamento <i class="fa-solid fa-chevron-down"></i></button><a class="matrix__repo" href="#paineis" data-panel="vp-comprovantes" aria-label="Ver as telas do aplicativo de captação de comprovantes"><i class="fa-solid fa-chart-pie"></i></a><a class="matrix__repo" href="https://github.com/MylennaDuarte/Automacao-Comprovantes-Pagamento" target="_blank" rel="noopener" aria-label="Estudo de caso da captação de comprovantes no GitHub"><i class="fa-brands fa-github"></i></a></span></td>
+                  <td data-label="Categoria">Automação <span class="matrix__ctx matrix__ctx--prod">Em produção</span></td>
+                  <td data-label="Ferramentas">Power Apps · Power Automate · Power Query · SharePoint · VBA</td>
+                  <td data-label="h/mês" class="matrix__num"><span class="mini" aria-hidden="true"><span style="--w: 100"></span></span>81,46</td>
+                  <td data-label="Resultado">+99,39% produtividade</td>
+                </tr>
+                <tr class="matrix__desc" id="p1" hidden>
+                  <td colspan="5"><p>Leitura e tratamento de mais de 2.000 comprovantes por mês, cruzamento com eventos de pagamento e classificação automática dos arquivos por colaborador, cliente e evento.</p></td>
+                </tr>
+
+                <tr class="matrix__row" data-cat="python" data-tools="python">
+                  <td data-label="Projeto"><button type="button" class="matrix__toggle" aria-expanded="false" aria-controls="p2">Divisor de folha de ponto <i class="fa-solid fa-chevron-down"></i></button></td>
+                  <td data-label="Categoria">Python <span class="matrix__ctx matrix__ctx--prod">Em produção</span></td>
+                  <td data-label="Ferramentas">Python · PDF</td>
+                  <td data-label="h/mês" class="matrix__num"><span class="mini" aria-hidden="true"><span style="--w: 27"></span></span>22</td>
+                  <td data-label="Resultado">+99,63% produtividade</td>
+                </tr>
+                <tr class="matrix__desc" id="p2" hidden>
+                  <td colspan="5"><p>Separação automática de cartões de ponto em PDF e renomeação individual pelo CPF, garantindo organização e recuperação rápida dos arquivos.</p></td>
+                </tr>
+
+                <tr class="matrix__row" data-cat="dados" data-tools="power-bi power-automate">
+                  <td data-label="Projeto"><span class="matrix__name"><button type="button" class="matrix__toggle" aria-expanded="false" aria-controls="p3">Relatório Power BI de ações e planos <i class="fa-solid fa-chevron-down"></i></button><a class="matrix__repo" href="#paineis" data-panel="vp-acoes" aria-label="Ver o painel do relatório de ações e planos"><i class="fa-solid fa-chart-pie"></i></a><a class="matrix__repo" href="https://github.com/MylennaDuarte/Relatorio-Acoes-e-planos" target="_blank" rel="noopener" aria-label="Código do relatório de ações e planos no GitHub"><i class="fa-brands fa-github"></i></a></span></td>
+                  <td data-label="Categoria">Dados &amp; BI <span class="matrix__ctx matrix__ctx--prod">Em produção</span></td>
+                  <td data-label="Ferramentas">Power BI · Power Automate</td>
+                  <td data-label="h/mês" class="matrix__num"><span class="mini" aria-hidden="true"><span style="--w: 13.5"></span></span>11</td>
+                  <td data-label="Resultado">+94% produtividade</td>
+                </tr>
+                <tr class="matrix__desc" id="p3" hidden>
+                  <td colspan="5"><p>Relatório para a área de segurança do trabalho com monitoramento de planos de ação e indicadores. A extração e a atualização da base foram automatizadas com Power Automate, substituindo controles e cálculos manuais.</p></td>
+                </tr>
+
+                <tr class="matrix__row" data-cat="python" data-tools="python">
+                  <td data-label="Projeto"><button type="button" class="matrix__toggle" aria-expanded="false" aria-controls="p4">Automação de arquivos eSocial <i class="fa-solid fa-chevron-down"></i></button></td>
+                  <td data-label="Categoria">Python <span class="matrix__ctx matrix__ctx--prod">Em produção</span></td>
+                  <td data-label="Ferramentas">Python · XML</td>
+                  <td data-label="h/mês" class="matrix__num"><span class="mini" aria-hidden="true"><span style="--w: 11"></span></span>9</td>
+                  <td data-label="Resultado">+95,10% produtividade</td>
+                </tr>
+                <tr class="matrix__desc" id="p4" hidden>
+                  <td colspan="5"><p>Rotina que trata, classifica e organiza XMLs de FGTS e INSS, separando por CNPJ do cliente e renomeando pelo CPF do colaborador.</p></td>
+                </tr>
+
+
+                <tr class="matrix__row" data-cat="automacao" data-tools="power-automate power-apps dataverse power-bi">
+                  <td data-label="Projeto"><button type="button" class="matrix__toggle" aria-expanded="false" aria-controls="p5">Digitalização dos indicadores DBO (DTO e TE) <i class="fa-solid fa-chevron-down"></i></button></td>
+                  <td data-label="Categoria">Automação <span class="matrix__ctx matrix__ctx--prod">Em produção</span></td>
+                  <td data-label="Ferramentas">Power Automate · Power Apps · Dataverse · Power BI</td>
+                  <td data-label="h/mês" class="matrix__num matrix__num--na"><span aria-hidden="true">—</span><span class="sr-only">sem medição em horas</span></td>
+                  <td data-label="Resultado">Processo legado 100% digitalizado</td>
+                </tr>
+                <tr class="matrix__desc" id="p5" hidden>
+                  <td colspan="5"><p>Plataforma corporativa na Power Platform que substituiu formulários estáticos e processamento manual em Excel, Access e Google Forms, com rastreabilidade total.</p></td>
+                </tr>
+
+                <tr class="matrix__row" data-cat="dados" data-tools="power-bi power-query">
+                  <td data-label="Projeto"><span class="matrix__name"><button type="button" class="matrix__toggle" aria-expanded="false" aria-controls="p6">Data Analytics aplicado à segurança pública <i class="fa-solid fa-chevron-down"></i></button><a class="matrix__repo" href="#paineis" data-panel="vp-seguranca" aria-label="Ver o painel de segurança pública"><i class="fa-solid fa-chart-pie"></i></a><a class="matrix__repo" href="https://github.com/MylennaDuarte/Curso-AnalistaDeDados-BigData/tree/main/Trabalho%20final%20-%20Relat%C3%B3rio%20Data%20Analytics%20Aplicado%20%C3%A0%20Seguran%C3%A7a" target="_blank" rel="noopener" aria-label="Relatório de segurança pública no GitHub"><i class="fa-brands fa-github"></i></a></span></td>
+                  <td data-label="Categoria">Dados &amp; BI <span class="matrix__ctx">Acadêmico</span></td>
+                  <td data-label="Ferramentas">Power BI · Power Query (M) · DAX · Estatística</td>
+                  <td data-label="h/mês" class="matrix__num matrix__num--na"><span aria-hidden="true">—</span><span class="sr-only">sem medição em horas</span></td>
+                  <td data-label="Resultado">Sazonalidade e desvios críticos identificados por AISP</td>
+                </tr>
+                <tr class="matrix__desc" id="p6" hidden>
+                  <td colspan="5"><p>Projeto prático de Big Data: dashboard analítico de homicídios dolosos no RJ, com grandes volumes e séries históricas tratadas em Linguagem M, modelagem DAX e método de Tukey (IQR) para detectar outliers por AISP, separando variações sazonais de desvios críticos.</p></td>
+                </tr>
+
+                <tr class="matrix__row" data-cat="dados" data-tools="power-bi power-query">
+                  <td data-label="Projeto"><span class="matrix__name"><button type="button" class="matrix__toggle" aria-expanded="false" aria-controls="p7">Big Data para marketing de instituições artísticas <i class="fa-solid fa-chevron-down"></i></button><a class="matrix__repo" href="#paineis" data-panel="vp-bigdata" aria-label="Ver o painel do projeto de Big Data"><i class="fa-solid fa-chart-pie"></i></a><a class="matrix__repo" href="https://github.com/MylennaDuarte/Analise-de-Big-Data-para-Marketing-de-Instituicoes-Artisticas" target="_blank" rel="noopener" aria-label="Projeto de Big Data no GitHub"><i class="fa-brands fa-github"></i></a></span></td>
+                  <td data-label="Categoria">Dados &amp; BI <span class="matrix__ctx">Acadêmico</span></td>
+                  <td data-label="Ferramentas">Power BI · Power Query · KPIs</td>
+                  <td data-label="h/mês" class="matrix__num matrix__num--na"><span aria-hidden="true">—</span><span class="sr-only">sem medição em horas</span></td>
+                  <td data-label="Resultado">Nota 5 de 5 na avaliação do cliente</td>
+                </tr>
+                <tr class="matrix__desc" id="p7" hidden>
+                  <td colspan="5"><p>Projeto acadêmico: coleta, tratamento e análise de dados sobre gostos e interesses do público para orientar o marketing e a captação de uma instituição artística, com dashboard e KPIs. Na avaliação por questionário, o cliente respondeu que o projeto atendeu às expectativas, esclareceu os interesses e tendências de potenciais clientes e será usado para impulsionar o marketing, com nota 5 de 5. O dono, especialista em teatro, confirmou que os dados batem com a experiência dele.</p></td>
+                </tr>
+
+                <tr class="matrix__empty" id="projectsEmpty" hidden>
+                  <td colspan="5"><i class="fa-solid fa-filter-circle-xmark"></i> Nenhum projeto combina categoria e ferramenta selecionadas. Escolha "Todas" em um dos segmentadores.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="matrix__foot">
+            <span>Traço em h/mês: projeto sem medição em horas. Produtividade medida contra o processo manual anterior.</span>
+            <a href="https://github.com/MylennaDuarte/" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Todos os repositórios no GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPETÊNCIAS ===== -->
+    <section class="section" id="competencias">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Competências</h2>
+            <p class="section__desc">Técnicas, por frente de trabalho, e comportamentais.</p>
+          </div>
+        </div>
+
+        <div class="skills-grid" data-reveal>
+          <div class="skill-group">
+            <h3><span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-chart-column"></i></span> Dados &amp; BI</h3>
+            <div class="chips">
+              <span class="chip">Power BI <em class="chip__lvl">intermediário</em></span><span class="chip">Power Query (M)</span><span class="chip">DAX</span>
+              <span class="chip">Excel</span><span class="chip">KPIs</span><span class="chip">Análise exploratória</span><span class="chip">ETL</span>
+              <span class="chip">Modelagem de dados</span><span class="chip">Qualidade de dados</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3><span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-database"></i></span> Banco de dados</h3>
+            <div class="chips">
+              <span class="chip">SQL <em class="chip__lvl">intermediário</em></span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span>
+              <span class="chip">Dataverse</span><span class="chip">Modelagem relacional</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3><span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-robot"></i></span> RPA &amp; Automação</h3>
+            <div class="chips">
+              <span class="chip">Power Automate Cloud</span><span class="chip">Power Automate Desktop</span>
+              <span class="chip">Power Apps</span><span class="chip">Power Platform <em class="chip__lvl">avançado</em></span><span class="chip">VBA</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3><span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-code"></i></span> Programação &amp; Web</h3>
+            <div class="chips">
+              <span class="chip">Python <em class="chip__lvl">intermediário</em></span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span>
+              <span class="chip">Git / GitHub</span>
+              <span class="chip">REST APIs</span><span class="chip">Integrações</span>
+              <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3><span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-brain"></i></span> Estatística, Big Data &amp; IA</h3>
+            <div class="chips">
+              <span class="chip">Estatística descritiva</span><span class="chip">Outliers (IQR/Tukey)</span>
+              <span class="chip">Big Data</span><span class="chip">Copilot Agent Builder</span><span class="chip">Claude</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3><span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-cloud"></i></span> Sistemas &amp; Plataformas</h3>
+            <div class="chips">
+              <span class="chip">Azure</span><span class="chip">Sydle</span><span class="chip">Office 365</span>
+              <span class="chip">Teams</span><span class="chip">SharePoint</span><span class="chip">OneDrive</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="soft-line"><span class="soft-line__label">Comportamentais</span> Comunicação · Trabalho em equipe · Proatividade · Resolução de problemas · Liderança · Adaptabilidade</p>
+      </div>
+    </section>
+
+    <!-- ===== FORMAÇÃO ===== -->
+    <section class="section section--alt" id="formacao">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Formação e cursos</h2>
+            <p class="section__desc">Graduação em andamento e cursos concluídos, do mais recente ao mais antigo.</p>
+          </div>
+        </div>
+
+        <div class="edu" data-reveal>
+          <span class="hexi hexi--lg"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-graduation-cap"></i></span>
+          <div>
+            <h3>Bacharelado em Sistemas de Informação</h3>
+            <p>Universidade Estácio de Sá · Rio de Janeiro, RJ · mar. 2023 a dez. 2026</p>
+          </div>
+          <span class="edu__tag"><span class="dot"></span> Conclusão em dez. 2026</span>
+        </div>
+
+        <div class="table-wrap table-wrap--card" data-reveal>
+          <table class="table">
+            <thead>
+              <tr><th scope="col">Curso</th><th scope="col" class="table__year">Ano</th><th scope="col" class="table__cert">Certificado</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>RPA + IA Congress</strong><small>Participação em evento</small></td>
+                <td class="table__year">2025</td>
+                <td class="table__cert"><span class="cert-none">—</span></td>
+              </tr>
+              <tr>
+                <td><strong>Analista de Dados — Big Data Science</strong><small>Senac RJ · 120 h</small></td>
+                <td class="table__year">2024</td>
+                <td class="table__cert">
+                  <a class="cert-link" href="img/certificados/senac-1.webp" data-lightbox="cert-senac" data-alt="Certificado Senac RJ de aperfeiçoamento em Analista de Dados — Big Data Science, 120 horas, de 30 de setembro a 8 de novembro de 2024, em nome de Mylenna da Silva Duarte." data-caption="Senac RJ · Analista de Dados — Big Data Science · 120 h, de 30/09 a 08/11/2024"><i class="fa-solid fa-certificate"></i> Ver</a>
+                  <a hidden href="img/certificados/senac-2.webp" data-lightbox="cert-senac" data-caption="Senac RJ · Analista de Dados — Big Data Science · carga horária" data-alt="Verso do certificado Senac: curso Analista de Dados — Big Data Science, 120 horas, concluído em 2024."></a>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Microsoft Power BI Profissional</strong><small>Udemy</small></td>
+                <td class="table__year">2024</td>
+                <td class="table__cert"><a class="cert-link" href="https://www.udemy.com/certificate/UC-681e3975-4069-4174-9b45-98c9f757a304/" target="_blank" rel="noopener"><i class="fa-solid fa-certificate"></i> Ver <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+              </tr>
+              <tr>
+                <td><strong>Banco de Dados SQL do Zero ao Avançado + Projetos Reais</strong><small>Udemy</small></td>
+                <td class="table__year">2023</td>
+                <td class="table__cert"><a class="cert-link" href="https://www.udemy.com/certificate/UC-9ddb6bc2-b0b0-4d06-a7a6-fe455712ea9b/" target="_blank" rel="noopener"><i class="fa-solid fa-certificate"></i> Ver <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+              </tr>
+              <tr>
+                <td><strong>SQL Avançado</strong><small>Udemy</small></td>
+                <td class="table__year">2023</td>
+                <td class="table__cert"><a class="cert-link" href="https://www.udemy.com/certificate/UC-2dd90f41-7b95-456e-89c2-13172ec67f63/" target="_blank" rel="noopener"><i class="fa-solid fa-certificate"></i> Ver <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+              </tr>
+              <tr>
+                <td><strong>Desenvolvimento Web</strong><small>Programa ElasNaTech · JA Brasil · 154 h</small></td>
+                <td class="table__year">2023</td>
+                <td class="table__cert">
+                  <a class="cert-link" href="img/certificados/elasnatech-1.webp" data-lightbox="cert-elasnatech" data-alt="Certificado do Programa ElasNaTech, da JA Brasil, com 154 horas, emitido em 1º de novembro de 2023 para Mylenna da Silva Duarte." data-caption="Programa ElasNaTech · JA Brasil · 154 h, concluído em 01/11/2023"><i class="fa-solid fa-certificate"></i> Ver</a>
+                  <a hidden href="img/certificados/elasnatech-2.webp" data-lightbox="cert-elasnatech" data-caption="Programa ElasNaTech · conteúdo: internet, programação, Git e GitHub, Python, HTML, CSS e JavaScript" data-alt="Conteúdo do Programa ElasNaTech: internet, programação, Git e GitHub, desenvolvimento web, Python, VS Code, HTML, CSS e JavaScript."></a>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Excel Essencial Completo</strong><small>Udemy</small></td>
+                <td class="table__year">2022</td>
+                <td class="table__cert"><a class="cert-link" href="https://www.udemy.com/certificate/UC-51ea5a3a-bc94-43b7-ad75-72159791ccc2/" target="_blank" rel="noopener"><i class="fa-solid fa-certificate"></i> Ver <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Vamos conversar?</h2>
+            <p class="section__desc">Escolha o caminho que preferir. Respondo rapidinho.</p>
+          </div>
+        </div>
+
+        <div class="contact" data-reveal>
+          <div class="contact__info">
+            <a class="contact__item" href="docs/curriculo-mylenna-duarte.pdf" target="_blank" rel="noopener">
+              <span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-file-arrow-down"></i></span>
+              <div><span>Currículo</span><strong>Baixar em PDF</strong></div>
+            </a>
+            <a class="contact__item" href="https://www.linkedin.com/in/mylenna/" target="_blank" rel="noopener">
+              <span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-brands fa-linkedin-in"></i></span>
+              <div><span>LinkedIn</span><strong>linkedin.com/in/mylenna</strong></div>
+            </a>
+            <a class="contact__item" href="https://wa.me/5521971164026" target="_blank" rel="noopener">
+              <span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-brands fa-whatsapp"></i></span>
+              <div><span>WhatsApp</span><strong>(21) 97116-4026</strong></div>
+            </a>
+            <a class="contact__item" href="mailto:mysilvaduarte@gmail.com">
+              <span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-solid fa-envelope"></i></span>
+              <div><span>E-mail</span><strong>mysilvaduarte@gmail.com</strong></div>
+            </a>
+            <a class="contact__item" href="https://github.com/MylennaDuarte/" target="_blank" rel="noopener">
+              <span class="hexi"><svg aria-hidden="true"><use href="#hex"/></svg><i class="fa-brands fa-github"></i></span>
+              <div><span>GitHub</span><strong>github.com/MylennaDuarte</strong></div>
+            </a>
+          </div>
+
+          <form class="contact__form" id="contactForm">
+            <div class="field">
+              <input type="text" id="nome" name="nome" placeholder=" " required autocomplete="name" />
+              <label for="nome">Seu nome</label>
+            </div>
+            <div class="field">
+              <input type="text" id="empresa" name="empresa" placeholder=" " autocomplete="organization" />
+              <label for="empresa">Empresa (opcional)</label>
+            </div>
+            <div class="field">
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder=" " required></textarea>
+              <label for="mensagem">Sobre a vaga ou oportunidade</label>
+            </div>
+            <div class="contact__send">
+              <button type="submit" class="btn btn--primary" data-channel="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp
+              </button>
+              <button type="submit" class="btn btn--ghost" data-channel="email">
+                <i class="fa-solid fa-envelope"></i> Enviar por e-mail
+              </button>
+            </div>
+            <p class="contact__note">A mensagem abre já preenchida, no WhatsApp ou no seu programa de e-mail.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__signature">Mylenna</span><span class="logo__heart">♡</span>
+        <small>Tecnologia que transforma. Soluções que conectam.</small>
+      </div>
+      <p class="footer__copy">© <span id="year"></span> Mylenna da Silva Duarte. Feito com <span class="heart">♡</span> e muito código.</p>
+      <a href="#inicio" class="footer__top" aria-label="Voltar ao topo"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada">
+    <figure class="lightbox__fig">
+      <figcaption><span id="lbCap"></span><span class="lightbox__count" id="lbCount"></span></figcaption>
+    </figure>
+    <button type="button" class="lightbox__btn lightbox__close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+    <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--prev" aria-label="Imagem anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--next" aria-label="Próxima imagem"><i class="fa-solid fa-chevron-right"></i></button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

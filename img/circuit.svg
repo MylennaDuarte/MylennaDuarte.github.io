@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" fill="none">
+  <!-- Traços de circuito finos, com dobras a 45° e nós vazados, no desenho da arte oficial "Mylenna — Soluções Tecnológicas". Autoral, revisado em 2026-09-21. -->
+  <defs>
+    <linearGradient id="fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="420" y2="420">
+      <stop offset="0" stop-color="#ff2d95" stop-opacity="1"/>
+      <stop offset="0.5" stop-color="#ff6fb7" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ff6fb7" stop-opacity="0.04"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g stroke="url(#fade)" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <!-- barramento de três vias saindo da borda lateral, paralelo nas dobras -->
+    <path d="M0 118 H132 L176 162 H258.5"/>
+    <path d="M0 130 H127.03 L171.03 174 H224.5"/>
+    <path d="M0 142 H122.06 L166.06 186 H190.5"/>
+    <!-- barramento de duas vias descendo da borda superior -->
+    <path d="M300 0 V64 L336 100 V168.5"/>
+    <path d="M312 0 V59.03 L348 95.03 V136.5"/>
+    <!-- vias soltas -->
+    <path d="M0 230 H38 L92 284 V372.5"/>
+    <path d="M0 200 H54.5"/>
+
+    <!-- nós vazados no fim de cada via -->
+    <g stroke-width="1.2">
+      <circle cx="262" cy="162" r="3.5"/>
+      <circle cx="228" cy="174" r="3.5"/>
+      <circle cx="194" cy="186" r="3.5"/>
+      <circle cx="336" cy="172" r="3.5"/>
+      <circle cx="348" cy="140" r="3.5"/>
+      <circle cx="92" cy="376" r="3.5"/>
+      <circle cx="58" cy="200" r="3.5"/>
+    </g>
+  </g>
+
+  <!-- matriz de pontos, como a grade da arte oficial -->
+  <g fill="url(#fade)">
+    <circle cx="200" cy="230" r="1.3"/><circle cx="212" cy="230" r="1.3"/><circle cx="224" cy="230" r="1.3"/><circle cx="236" cy="230" r="1.3"/>
+    <circle cx="200" cy="242" r="1.3"/><circle cx="212" cy="242" r="1.3"/><circle cx="224" cy="242" r="1.3"/><circle cx="236" cy="242" r="1.3"/>
+    <circle cx="200" cy="254" r="1.3"/><circle cx="212" cy="254" r="1.3"/><circle cx="224" cy="254" r="1.3"/><circle cx="236" cy="254" r="1.3"/>
+  </g>
+</svg>
